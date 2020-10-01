@@ -28,10 +28,6 @@ systemctl enable lightdm
 systemctl enable NetworkManager.service 
 systemctl enable wpa_supplicant.service
 
-
-mkdir -p /boot/
-mkinitcpio -P
-
 ## Mods
 rm -rf /usr/share/xsessions/openbox-kde.desktop /usr/share/xsessions/i3-with-shmlog.desktop
 

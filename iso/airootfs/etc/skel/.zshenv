@@ -12,15 +12,15 @@ cd - > /dev/null
 
 
 ## Sourcing Common Shell Files #################################################
-source $HOME/.profile
-source $HOME/.aliases
+source ${HOME}/.profile
+source ${HOME}/.aliases
 
 
 ## Calling Sources #############################################################
 
 for file in $(
-  find "~/.zsh.d" -name '*.pre.zsh'
-  find "~/.zsh.d" -name '*plugin.zsh' ! -name '*.pre.zsh' ! -name '*.post.zsh'
+  find "${HOME}/.zsh.d" -name '*.pre.zsh'
+  find "${HOME}/.zsh.d" -name '*plugin.zsh' ! -name '*.pre.zsh' ! -name '*.post.zsh'
 ); do
   source "$file"
 done

@@ -1,7 +1,9 @@
-#!/usr/bin/env bash
-#
-# SPDX-License-Identifier: GPL-3.0-or-later
+# Deprecated apparently, ultimately somewhat useless considering you can just run mkarchiso and it does all of what
+## these scripts did, included for reference purposes for anyone else using this repo later expecting to see these 
+# scripts - TLH
 
-printf '\n[%s] WARNING: %s\n\n' "mkarchiso" "build.sh scripts are deprecated! Please use mkarchiso directly." >&2
-_buildsh_path="$(realpath -- "$0")"
-exec mkarchiso "$@" "${_buildsh_path%/*}"
+echo "Good news and bad news"
+echo "Bad news, these scripts are deprecated."
+echo "Good news, the reason is because you don't need them! mkarchiso will do all that for you!"
+echo "Example Usage (command that generates Electric Tantra Linux)"
+echo "# mkarchiso -v -w /tmp/mkarchiso ./"
