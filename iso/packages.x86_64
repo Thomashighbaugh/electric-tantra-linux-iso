@@ -38,12 +38,13 @@ irssi
 iwd
 jfsutils
 jrnl
+kitty
 kitty-terminfo
 lftp
 libglvnd
 lightdm
 lightdm-gtk-greeter
-linux
+lightdm-gtk-greeter-settings
 linux-headers
 linux-atm
 linux-firmware
@@ -77,7 +78,8 @@ parted
 partimage
 ppp
 pptpclient
-pyenv
+python
+python2
 reflector
 reiserfsprogs
 rp-pppoe
@@ -150,7 +152,6 @@ arc-gtk-theme
 arc-icon-theme
 
 ##-------- Programs --------##
-accountsservice 
 alsa-plugins
 alsa-tools
 alsa-utils
@@ -229,13 +230,11 @@ zip
 
 
 ##-------- AUR Packages --------##
-awesome-freedesktop-git  
+awesome-freedesktop-git
 awesome-git
 awmtt
 betterlockscreen
-bhairava-grub2-theme
 colorpicker
-chhinamasta-icon-theme
 dhumavati-gtk-theme
 i3-gaps-rounded-git
 ksuperkey

@@ -22,7 +22,7 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 systemctl enable pacman-init.service choose-mirror.service
 systemctl set-default graphical.target
 rm -rfv  /etc/systemd/system/display-manager.service 
-systemctl enable lightdm 
+systemctl enable lightdm
 
 ## Services
 systemctl enable NetworkManager.service 
