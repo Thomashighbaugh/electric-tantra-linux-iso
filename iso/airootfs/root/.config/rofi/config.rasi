@@ -1,8 +1,0 @@
-configuration {
-  show-icons:         true;
-  icon-theme:         "Chhinamasta";
-  terminal:			  "kitty";
-  cycle:              false;
-  hide-scrollbar:     true;
-  disable-history:    false;
-}

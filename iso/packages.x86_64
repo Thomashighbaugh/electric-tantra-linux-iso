@@ -127,11 +127,6 @@ xorg-xrdb
 xf86-video-intel
 xf86-video-amdgpu
 xf86-video-nouveau
-nvidia
-nvidia-utils
-nvidia-dkms
-nvidia-prime
-opencl-nvidia
 ffnvcodec-headers
 libxnvctrl
 
@@ -233,20 +228,13 @@ zip
 awesome-freedesktop-git
 awesome-git
 awmtt
-betterlockscreen
 colorpicker
-dhumavati-gtk-theme
-i3-gaps-rounded-git
-ksuperkey
 lain-git
 obmenu-generator
 perl-linux-desktopfiles
-polybar
-networkmanager-dmenu-git
 obmenu-generator
-picom-ibhagwan-git
+picom-jonaburg-git
 rofi-git
-rxvt-unicode-pixbuf
 perl-linux-desktopfiles
 vicious-git
 yay

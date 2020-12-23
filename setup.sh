@@ -103,12 +103,10 @@ set_mod() {
 }
 
 build-iso() {
-	clear
 	echo
 	echo ${ORANGE}"[*] ${GREEN}The ISO is now being built in /tmp, please wait!."
 	echo
-	sudo mkarchiso -v -w /tmp/mkarchiso ./iso
-
+	sudo mkarchiso -v -w /tmp/mkarchiso-tmp ./iso
 	echo
 	echo ${ORANGE}"[*] ${GREEN}ISO building has finished... finally"
 	echo
@@ -121,11 +119,14 @@ clean() {
 	echo ${ORANGE}"[*] ${GREEN} Cleaning up the system!"
 	echo
 
-	sudo rm -rf /tmp/mkarchiso
+	sudo rm -rf /tmp/mkarchiso-tmp
+	sudo chmod -Rv 777 ./*
 }
 
 ## Main
 banner
 prerequisite
 set_mod
+build-iso
+clean
 exit 0
