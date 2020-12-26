@@ -18,7 +18,7 @@ usermod -g liveuser -d /home/liveuser -m -s /bin/zsh -G "adm,audio,floppy,log,ne
 echo "liveuser ALL=(ALL) NOPASSWD: ALL" >>/etc/sudoers
 usermod -s /usr/bin/zsh root
 chmod 700 /root
-
+#/usr/share/liveuser | passwd liveuser
 # Setup keyrings
 pacman-key --init
 pacman-key --populate
@@ -51,7 +51,7 @@ cat >"/etc/os-release" <<-EOL
 	ID=arch
 	BUILD_ID=rolling
 	ANSI_COLOR="38;13;39;126;198"
-	HOME_URL="https://github.com/Thomashighbaugh/electric-tantra-iso"
+	HOME_URL="https://github.com/Thomashighbaugh/electric-tantra-linux-iso"
 	LOGO=electrictantra
 EOL
 
@@ -73,5 +73,8 @@ systemctl enable wpa_supplicant.service
 # Enable graphical boot
 systemctl set-default graphical.target
 
+#Dynamic Linker Cache
+rm /etc/ld.so.cache
+ldconfig
 ## Mods
 rm -rf /usr/share/xsessions/openbox-kde.desktop /usr/share/xsessions/i3-with-shmlog.desktop

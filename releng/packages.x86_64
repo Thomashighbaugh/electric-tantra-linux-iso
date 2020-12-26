@@ -138,6 +138,7 @@ nm-connection-editor
 ##-------- Openbox --------##
 obconf
 openbox
+adapta-gtk-theme
 
 ##-------- Bspwm --------##
 bspwm
@@ -175,6 +176,9 @@ htop
 imagemagick
 inetutils
 jq
+leafpad
+lxappearance
+lxdm-gtk3
 make
 midori
 ncdu
@@ -183,6 +187,7 @@ nitrogen
 os-prober
 p7zip
 patch
+pkg-config
 plank
 polkit
 pulseaudio
@@ -194,6 +199,10 @@ ranger
 scrot
 termite
 terminus-font-otb
+thunar
+thunar-archive-plugin
+thunar-media-tags-plugin
+thunar-volman
 ttf-dejavu
 tumbler
 udisks2
@@ -204,6 +213,9 @@ vim
 wget
 xarchiver
 xclip
+xdg-user-dirs
+xfce4-power-manager
+xfce4-settings
 xmlstarlet
 yad
 zip
@@ -211,31 +223,33 @@ zip
 
 
 
-##-------- awesomewm --------##
+##-------- AUR Packages --------##
 awesome-freedesktop-git
 awesome-git
 awmtt
 colorpicker
-feh
 lain-git
 obmenu-generator
 perl-linux-desktopfiles
-plymouth
 obmenu-generator
 picom-jonaburg-git
 rofi-git
 perl-linux-desktopfiles
-lxappearance
-thunar
-thunar-archive-plugin
-thunar-media-tags-plugin
-thunar-volman
-# vicious-git is breaking my config, even the non-portable amd64 version I use in my dotfiles! So this is included as such for now TODO include vicious.so in the file
 vicious
-xdg-user-dirs
-xfce4-power-manager
-xfce4-settings
-
-##-------- packages ---------##
 yay
-pkg-config
+electrictantra-dropbox-cli
+plymouth
+
+
+powerpill
+pacman-utils 
+pygtk
+pypy3-virtualenv
+pyenv-virtualenv
+python-virtualenvondemand
+python-pylint-venv
+qemu-user-static-bin
+rtl8812au-dkms-git
+feh-git
+plymouth
+appimagelauncher
