@@ -1,8 +1,8 @@
 ##-------- Base Packages --------##
 # SPDX-License-Identifier: GPL-3.0-or-later
+b43-fwcutter
 amd-ucode
 arch-install-scripts
-b43-fwcutter
 base
 bind-tools
 broadcom-wl
@@ -110,6 +110,8 @@ xorg-server
 xterm
 zsh
 
+
+
 ##-------- Xorg Packages --------##
 xorg-server
 xorg-xbacklight
@@ -118,18 +120,117 @@ xorg-xfd
 xorg-xkill
 xorg-xrandr
 xorg
-xorg-apps
-xorg-drivers
 xorg-xinit
 xorg-xrdb
 
-##-------- GPU Drivers (Intel/AMD/Nvidia) --------##
+xf86-video-vesa
+xorg-bdftopcf
+xorg-docs
+xorg-font-util
+xorg-fonts-100dpi
+xorg-fonts-75dpi
+xorg-fonts-encodings
+xorg-iceauth
+xorg-mkfontscale
+xorg-server
+xorg-server-common
+xorg-server-devel
+xorg-server-xephyr
+xorg-server-xnest
+xorg-server-xvfb
+xorg-sessreg
+xorg-setxkbmap
+xorg-smproxy
+xorg-x11perf
+xorg-xauth
+xorg-xbacklight
+xorg-xcmsdb
+xorg-xcursorgen
+xorg-xdpyinfo
+xorg-xdriinfo
+xorg-xev
+xorg-xgamma
+xorg-xhost
+xorg-xinput
+xorg-xkbcomp
+xorg-xkbevd
+xorg-xkbutils
+xorg-xkill
+xorg-xlsatoms
+xorg-xlsclients
+xorg-xmodmap
+xorg-xpr
+xorg-xprop
+xorg-xrandr
+xorg-xrdb
+xorg-xrefresh
+xorg-xset
+xorg-xsetroot
+xorg-xvinfo
+xorg-xwayland
+xorg-xwd
+xorg-xwininfo
+xorg-xwud
+
+###-------XORG Apps--------------###
+xorg-bdftopcf
+xorg-iceauth
+xorg-mkfontscale
+xorg-sessreg
+xorg-setxkbmap
+xorg-smproxy
+xorg-x11perf
+xorg-xauth
+xorg-xbacklight
+xorg-xcmsdb
+xorg-xcursorgen
+xorg-xdpyinfo
+xorg-xdriinfo
+xorg-xev
+xorg-xgamma
+xorg-xhost
+xorg-xinput
+xorg-xkbcomp
+xorg-xkbevd
+xorg-xkbutils
+xorg-xkill
+xorg-xlsatoms
+xorg-xlsclients
+xorg-xmodmap
+xorg-xpr
+xorg-xprop
+xorg-xrandr
+xorg-xrdb
+xorg-xrefresh
+xorg-xset
+xorg-xsetroot
+xorg-xvinfo
+xorg-xwd
+xorg-xwininfo
+xorg-xwud
+
+###-------- GPU Drivers (Intel/AMD/Nvidia) --------##
 xf86-video-intel
 xf86-video-amdgpu
 xf86-video-nouveau
 ffnvcodec-headers
 libxnvctrl
-
+xf86-input-evdev
+xf86-input-libinput
+xf86-input-synaptics
+xf86-input-vmmouse
+xf86-input-void
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-dummy
+xf86-video-fbdev
+xf86-video-intel
+xf86-video-nouveau
+xf86-video-openchrome
+xf86-video-vesa
+xf86-video-vmware
+xf86-video-voodoo
+xf86-video-qxl
 
 ##-------- Networking --------##
 networkmanager
@@ -138,13 +239,23 @@ nm-connection-editor
 ##-------- Openbox --------##
 obconf
 openbox
-adapta-gtk-theme
+obmenu-generator
 
 ##-------- Bspwm --------##
 bspwm
 sxhkd
 arc-gtk-theme
 arc-icon-theme
+
+##----- Awesome WM ------##
+awesome-freedesktop-git
+awesome-git
+awmtt
+lain-git
+feh-git
+picom-jonaburg-git
+rofi-git 
+vicious
 
 ##-------- Programs --------##
 alsa-plugins
@@ -153,17 +264,23 @@ alsa-utils
 atril
 autoconf
 automake
-base-devel
 binutils
 bison
 bmon
 calc
 dunst
+file
+findutils
 fakeroot
 ffmpeg
 ffmpegthumbnailer
+flex
+gawk
 gcc
 gparted
+gettext
+grep
+groff
 gst-libav
 gst-plugins-bad
 gst-plugins-base
@@ -172,11 +289,12 @@ gst-plugins-ugly
 gtk-engine-murrine
 gvfs
 gvfs-mtp
+gzip
 htop
 imagemagick
 inetutils
 jq
-leafpad
+libtool
 lxappearance
 lxdm-gtk3
 make
@@ -186,8 +304,9 @@ ncmpcpp
 nitrogen
 os-prober
 p7zip
+pacman
 patch
-pkg-config
+pkgconf
 plank
 polkit
 pulseaudio
@@ -197,8 +316,11 @@ pavucontrol
 pv
 ranger
 scrot
+sed
+sudo
 termite
 terminus-font-otb
+texinfo
 thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
@@ -211,6 +333,7 @@ unzip
 viewnior
 vim
 wget
+which
 xarchiver
 xclip
 xdg-user-dirs
@@ -224,32 +347,23 @@ zip
 
 
 ##-------- AUR Packages --------##
-awesome-freedesktop-git
-awesome-git
-awmtt
+
 colorpicker
-lain-git
-obmenu-generator
+
+
 perl-linux-desktopfiles
-obmenu-generator
-picom-jonaburg-git
-rofi-git
-perl-linux-desktopfiles
-vicious
+
 yay
 electrictantra-dropbox-cli
 plymouth
 
 
-powerpill
-pacman-utils 
 pygtk
 pypy3-virtualenv
 pyenv-virtualenv
 python-virtualenvondemand
 python-pylint-venv
-qemu-user-static-bin
 rtl8812au-dkms-git
-feh-git
+
 plymouth
 appimagelauncher
